@@ -3,7 +3,7 @@
  postgres deployment with password: "root", username: "root", database:"root" -->
 2. helm install posexp prometheus-community/prometheus-postgres-exporter -f postgres_values.yaml
 
-# postgres_values.yaml contains custom values so prometheus-postgres-exporter can connect to our postgres using those variables such as username, password.
+ <!-- postgres_values.yaml contains custom values so prometheus-postgres-exporter can connect to our postgres using those variables such as username, password. -->
 
 <!-- -   prometheus: -->
 
