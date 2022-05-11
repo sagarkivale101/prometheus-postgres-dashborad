@@ -23,17 +23,14 @@
 
         - example:
 
-          <!--
             - job_name: 'prometheus'
               static_configs:
-              - targets: ['192.168.49.2:30510']
-        
-               -->
+                - targets: ['192.168.49.2:30510']
 
         - here prometheus will monitor apllication running on 192.168.49.2:30510
 
 6. kubectl replace -f prometheus-config2.yaml
 
-    - we can use replace cmd on prometheus-config2.yaml so prometheus will thake new configurations
+    - we can use replace cmd on prometheus-config2.yaml so prometheus will thke new configurations
 
     - kill the prometheus pod so new pod will start with new configurations
