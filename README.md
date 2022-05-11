@@ -23,9 +23,11 @@
 
         - example:
 
-            - job_name: 'prometheus'
-              static_configs:
-                - targets: ['192.168.49.2:30510']
+            # job_name: 'prometheus'
+
+            # static_configs:
+
+            # - targets: ['192.168.49.2:30510']
 
         - here prometheus will monitor apllication running on 192.168.49.2:30510
 
