@@ -1,0 +1,35 @@
+
+
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 9187
+  name: http
+  
+
+serviceMonitor:
+  enabled: true
+  interval: 30s
+  scrapeTimeout: 10s
+  labels:
+      release: prometheus
+
+
+prometheusRule:
+  enabled: false
+  additionalLabels:
+    release: prometheus
+
+config:
+  datasource:
+    
+    host: postgres
+    user: root
+    password: root
+    port: "5432"
+    database: root
+    sslmode: disable
+  # datasourceSecret:
+  #   name: "pg-secret"
+  #   key: "PG_CONN_STRING"
